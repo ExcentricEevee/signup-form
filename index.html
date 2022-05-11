@@ -11,12 +11,43 @@
 </head>
 
 <body>
-    <h1>Test heading(1)</h1>
-    <img src="media/images/photo_by_halie-west.avif" alt="Picture of lush greens">
-    <form action="#" method="post">
-        <label for="username">Username:</label>
-        <input type="text" form="username">
-    </form>
+    <div class="logo background">
+        <div class="logo text">
+            <img src="media/images/odin-lined.png" alt="Face of Odin">
+            <p>Odin</p>
+        </div>
+        <div class="footer">Photo by <a href="#">Halie West</a> on <a href="#">Unsplash</a></div>
+    </div>
+    <div class="content">
+        <div class="quote">
+            <p>This is not a real online service! You know you need something like this in your life to help you realize
+                your dreams. Sign up <em>now</em> to get started.</p>
+            <p>You know you want to.</p>
+        </div>
+        <div class="form">
+            <fieldset>
+                <legend>Let's do this!</legend>
+                <form action="#" method="post">
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="first-name" name="first-name">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name" name="last-name">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="user_email">
+                
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="user_phonenumber">
+                
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="user_password">
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" id="confirm-password" name="user_password">
+                    <button type="submit">Create Account</button>
+                </form>
+            </fieldset>
+            <p>Already have an account? <a href="#">Log in</a></p>
+        </div>
+    </div>
 </body>
 
 </html>
