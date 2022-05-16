@@ -12,6 +12,7 @@ body {
     display: flex;
     flex-direction: row;
     height: 100vh;
+    width: 100vw;
 }
 
 .logo-container {
@@ -20,7 +21,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    color: #faeaea;
+    color: var(--cream);
 }
 
 .logo-container .footer {
@@ -38,7 +39,7 @@ body {
 }
 
 .logo {
-    width: 600px;
+    width: 550px;
     padding: 12px;
     margin: 200px 0;
     font-size: 5rem;
@@ -63,22 +64,56 @@ img {
     font-family: var(--system-fallback-fonts);
 }
 
+.content > * {
+    padding: 12px;
+}
+
 .content .quote {
+    width: 700px;
+}
+
+.content .quote, legend {
     display: flex;
     flex-direction: column;
     font-weight: 700;
-    font-size: 1.5rem;
-
+    font-size: 1.4rem;
+    color: #333;
 }
 
-form label{
+label{
     color: #333;
     font-size: 0.9rem;
     font-weight: 500;
+    letter-spacing: 2px;
+    font-size: 0.9rem;
 }
 
-form .inputs {
-    box-shadow: 0px 2px 5px #aaa;
+.inputs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    height: 200px;
+}
+
+.inputs .field {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    width: 300px;
+    height: 25px;
+    border: 1px solid var(--cream);
+    border-radius: 4px;
+}
+
+input:focus {
+    border: 1px solid #2095ff;
+    box-shadow: 2px 2px 2px;
+}
+
+.error {
+    border: 1px solid #fa255a;
 }
 
 button[type="submit"] {
@@ -91,4 +126,10 @@ button[type="submit"] {
     font-family: var(--system-fallback-fonts);
     font-size: 0.9rem;
     font-weight: 700;
+}
+
+.sign-in {
+    color: #596D48;
+    text-decoration: none;
+    font-weight: 500;
 }
