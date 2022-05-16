@@ -107,9 +107,13 @@ input {
     border-radius: 4px;
 }
 
+:focus-visible {
+    outline: none;
+}
+
 input:focus {
     border: 1px solid #2095ff;
-    box-shadow: 2px 2px 2px;
+    box-shadow: 1px 1px 1px #222;
 }
 
 .error {
